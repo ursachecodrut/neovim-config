@@ -2,6 +2,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'antoinemadec/coc-fzf'
 
 let g:coc_global_extensions = [
+    \ 'coc-clangd',
     \ 'coc-css',
     \ 'coc-diagnostic',
     \ 'coc-emmet',

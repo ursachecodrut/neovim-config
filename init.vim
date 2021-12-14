@@ -1,4 +1,4 @@
-"--------------------------------------------------------------------------
+""--------------------------------------------------------------------------
 " General settings
 "--------------------------------------------------------------------------
 
@@ -48,10 +48,11 @@ elseif has ('unix')
 endif
 
 
-call plug#begin($dir . '/plugged')
+call plug#begin($dir . '/after')
   source $dir/plugged/dracula.vim
   source $dir/plugged/airline.vim
   source $dir/plugged/coc.vim
   source $dir/plugged/vim-jsx.vim
   source $dir/plugged/fugitive.vim
+  source $dir/plugged/fzf.vim
 call plug#end()
