@@ -20,6 +20,7 @@ let g:coc_global_extensions = [
     \ 'coc-svg',
     \ 'https://github.com/rodrigore/coc-tailwind-intellisense',
     \ 'coc-tsserver',
+    \ 'coc-pyright',
 \ ]
 
 

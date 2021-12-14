@@ -35,6 +35,8 @@ set confirm
 set exrc
 set updatetime=80 "Reduce time for highlighting other references
 set redrawtime=10000 "Allow more time for loading syntax on large files
+set splitright
+set splitbelow
 
 "--------------------------------------------------------------------------
 " Key maps
@@ -42,6 +44,12 @@ set redrawtime=10000 "Allow more time for loading syntax on large files
 
 " Quicky escape to normal mode
 imap jj <esc>
+
+" Split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 
 "--------------------------------------------------------------------------
