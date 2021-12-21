@@ -1,1 +1,1 @@
-Plug 'mxw/vim-jsx'
+Plug 'maxmellon/vim-jsx-pretty'

@@ -71,7 +71,9 @@ call plug#begin($dir . '/after')
   source $dir/plugged/onedark.vim
   source $dir/plugged/airline.vim
   source $dir/plugged/coc.vim
+  source $dir/plugged/polyglot.vim
   source $dir/plugged/vim-jsx.vim
+  source $dir/plugged/vim-js.vim
   source $dir/plugged/fugitive.vim
   source $dir/plugged/fzf.vim
   "source $dir/plugged/clang-complete.vim
@@ -89,5 +91,5 @@ if (has("termguicolors"))
    set termguicolors
 endif
 
-
+syntax on
 colorscheme onedark
