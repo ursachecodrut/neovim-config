@@ -9,7 +9,7 @@ set smartindent
 set lazyredraw
 set expandtab
 set shiftwidth=4
-set tabstop=4
+set tabstop=2
 set smarttab
 set hidden
 set signcolumn=yes:2
@@ -38,6 +38,8 @@ set redrawtime=10000 "Allow more time for loading syntax on large files
 set splitright
 set splitbelow
 
+
+
 "--------------------------------------------------------------------------
 " Key maps
 "--------------------------------------------------------------------------
@@ -64,7 +66,9 @@ endif
 
 
 call plug#begin($dir . '/after')
-  source $dir/plugged/dracula.vim
+" source $dir/plugged/nord.vim
+" source $dir/plugged/dracula.vim
+  source $dir/plugged/onedark.vim
   source $dir/plugged/airline.vim
   source $dir/plugged/coc.vim
   source $dir/plugged/vim-jsx.vim
@@ -72,3 +76,18 @@ call plug#begin($dir . '/after')
   source $dir/plugged/fzf.vim
   "source $dir/plugged/clang-complete.vim
 call plug#end()
+
+
+"--------------------------------------------------------------------------
+" Color Scheme
+"--------------------------------------------------------------------------
+if (has("nvim"))
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
+
+if (has("termguicolors"))
+   set termguicolors
+endif
+
+
+colorscheme onedark
