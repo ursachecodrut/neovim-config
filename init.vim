@@ -76,6 +76,7 @@ call plug#begin($dir . '/after')
   source $dir/plugged/vim-js.vim
   source $dir/plugged/fugitive.vim
   source $dir/plugged/fzf.vim
+  source $dir/plugged/vim-tmux-navigator.vim
   "source $dir/plugged/clang-complete.vim
 call plug#end()
 
